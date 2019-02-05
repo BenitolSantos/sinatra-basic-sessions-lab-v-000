@@ -15,8 +15,8 @@ class App < Sinatra::Base
   post '/checkout' do
     session["item"] = params[:item]
     #setting item from the form with a item key in the session hash
-    @session = session 
-    #Because we enabled sessions in our app, 
+    @session = session
+    #Because we enabled sessions in our app,
     #every controller action has access to the session hash.
     @item = item
   end
