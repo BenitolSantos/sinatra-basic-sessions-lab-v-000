@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    session["item"] = params[:item] #session is a hash.
+    session["item"] = params[:item] #setting item from the form with a item key
     @session = session
     @item = item
   end
