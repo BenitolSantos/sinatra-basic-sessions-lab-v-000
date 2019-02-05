@@ -12,5 +12,6 @@ class App < Sinatra::Base
 
   post '/checkout' do
     @item = item
+
   end
 end
